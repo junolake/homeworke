@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 
+
 * {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
+body {
+    background-color: #e3dfdc;
+
+}
 .container {
     width: 720px;
-    height: 10vh;
+    height: 100vh;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -21,50 +27,57 @@
 }
 
 .upper-box {
-    height: 144px; 
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
-.upper-box:hover .upper-img {
-    padding-left: 40px;
+.upper-box:hover 
+.upper-img {
+    transform: scale(1.1) ;
+}
+
+.les {
+    background-color: #e8e4e1;
+}
+
+.second-upper-img {
+    z-index: 0;
+    position: absolute;
+    max-width: 144px;
+    max-height: 155px;
+}
+
+.upper-img {
+    z-index: 1;
+    position: absolute;
+    padding-top: 10px;
+    max-width: 70px;
+    max-height: 100px;
+}
+     /* optional */ 
+.upper-text {
+    padding-left: 10px;
+    color: white;
 }
 
 .upper-box:hover .upper-text {
     padding-left: 40px;
 }
-
-
-.les {
-    background-color: #DED0B6;
-}
-
-.ges {
-    background-color: #B2A59B;
-}
-
-.upper-img {
-    max-width: 100px;
-    max-height: 100px;
-    padding-top: 12px;
-    padding-left: 12px;
-}
-
-.upper-text {
-    padding-left: 10px;
-    color: white;
-}
+     /* optional */ 
 
 .search-bar {
     width: 720px;
     height: 70px;
     display: flex;
     justify-content: space-between;
-    background-color: #e3dfdc;
+    background-color: #c9c8cc;
 }
 
 .seacrh-text {
     margin: 20px;
     font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .seacrh-img {
@@ -74,12 +87,12 @@
 }
 
 .top100 {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .top100-title {
+    background-color: #c9c8cc ;
     font-size: 34px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .top100-list {
@@ -95,7 +108,11 @@
     padding: 4px;
     border: 3px solid #b6c2cc;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+}
+
+.top-selected {
+background-color: #b6c2cc;
+
 }
 
 .top100-item:hover {
@@ -103,14 +120,17 @@
 }
 
 .film-box {
-    margin-top: 100px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 200px 520px;
-    grid-template-rows: 100% 100%; 
+    grid-template-rows: 280px; 
+    background-color: #e8e4e1 ;
 }
 
 .cover {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .film-img {
@@ -121,35 +141,112 @@
 .film-header {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5px;
 }
 
 .film-title {
-    font-family: 'Montserrat', sans-serif;
     font-size: 28px;
-    width: 60%;
-    padding: 4px;
-    border: 3px solid #b6c2cc;
+    height: 40px;
+    width: 84%;
+    margin-right: 3.5%;
+    background-color: #c9c8cc ;
     text-align: center;
 }
 
 .runk {
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
-    width: 30%;
-    padding: 4px;
-    border: 3px solid #b6c2cc;
+    font-size: 28px;
+    height: 40px;
+    width: 12.5%;
+    background-color: #c9c8cc ;
     text-align: center;
 }
 
 .film-info {
-    padding-top: 14px;
+    padding-top: 15px;
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.film-content {
+    height: 200px
+}
+
+.starblock {
+    display: flex;
+    align-items: center;
+
 }
 
 .star-img {
     width: 40px;
     height: 40px;
+}
+
+.star-rate {
+     /* текст должен быть справа от звезды */ 
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+.status-border {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.status {
+    /* текст должен быть ЦЕНТРИРОВАН справа внизу */ 
+    font-size: 18px;
+    height: 20px;
+    width: 40%;
+    background-color: #c9c8cc ;
+    text-align: center;
+
+    display: block;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.lower-list {
+    align-items: start;
+    position: sticky;
+    bottom: 0;
+
+    display: grid;
+    list-style: none;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100% 100% 100% 100% 100%; 
+}
+
+.lower-box {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.lower-box:hover 
+.lower-img {
+    transform: scale(1.1) ;
+}
+
+.les {
+    background-color: #e8e4e1;
+}
+
+.second-lower-img {
+    z-index: 0;
+    position: absolute;
+    max-width: 144px;
+    max-height: 155px;
+}
+
+.lower-img {
+    z-index: 1;
+    position: absolute;
+    padding-top: 10px;
+    max-width: 65px;
+    max-height: 100px;
 }
 
 footer {
