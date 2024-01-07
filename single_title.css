@@ -157,7 +157,7 @@ footer {
 
 .title-item {
     width: 100%;
-    height: 20%;
+    height: 140px;
 
     text-align: center;
     position: relative;
@@ -210,4 +210,8 @@ footer {
     display: flex;
     font-size: 22pt;
     width: 33%
+}
+
+.off-description {
+    display: none;
 }
