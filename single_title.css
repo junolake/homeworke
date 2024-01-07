@@ -189,6 +189,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    background-color: #e3dfdc;
 }
 
 .star-item p{
@@ -209,7 +210,11 @@ footer {
 .info-item {
     display: flex;
     font-size: 22pt;
-    width: 33%
+    width: 33%;
+}
+
+.desc-active {
+    font-weight: 600;
 }
 
 .off-description {

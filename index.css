@@ -144,13 +144,15 @@ background-color: #b6c2cc;
     margin-top: 5px;
 }
 
-.film-title {
+.film-link {
+    text-decoration: none;
     font-size: 28px;
     height: 40px;
     width: 84%;
     margin-right: 3.5%;
     background-color: #c9c8cc ;
     text-align: center;
+    color: black;
 }
 
 .runk {
