@@ -248,8 +248,18 @@
 
     </div>
 
-    <script src="./a.js">
+    <script>
+        let topItems = document.querySelectorAll('.top100-item');
+
+        topItems .forEach(function(item) {
+            item.addEventListener("click", function() {
         
+                topItems.forEach(function(innerItem) {
+                innerItem.classList.remove("top-selected");
+                });
+            item.classList.add("top-selected");
+            });
+        }); 
     </script>
 </body>
 </html>
